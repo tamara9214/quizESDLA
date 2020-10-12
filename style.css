@@ -1,0 +1,121 @@
+form#quiz{
+    
+    
+    background-image: url(/fondopreguntas.jpg);
+    background-size: 180%;
+    padding: 15px;
+    
+}
+
+div.question {
+    width: 80vw;
+    height: 10vh;
+    padding: 2%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 5px;
+    margin-left: 10px;
+    align-items: center;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 90%;
+    font-style: oblique;
+    text-align: center;
+
+    
+    background-color: rgba(201, 197, 7, 0.753);
+    color: black;
+    border-radius: 10px;
+    box-shadow: black;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+div.answers {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 40px;
+    color:black;
+    width: 70vw;
+    
+
+
+}
+
+label {
+    background-color: rgba(230, 230, 250, 0.521);
+    margin-bottom: 5px;
+}
+
+form#result {
+    visibility: visible;
+}
+
+#previous:hover {
+
+    background-color: rgb(224, 203, 8);
+    border-radius: 15%;
+    border-style: none;
+}
+
+#next:hover {
+
+    background-color: rgb(224, 203, 8);
+    border-radius: 15%;
+    border-style: none;
+}
+
+#submit:hover {
+
+    background-color: rgb(224, 203, 8);
+    border-radius: 15%;
+    border-style: none;
+}
+
+#home {
+   
+    
+        background-color: grey;
+        background-image: url(fondo.jpg);
+        background-size: 120%;
+        padding: 15px;
+        
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+#start {
+     
+    padding: 20px;
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+
+    transform: translate(75px, 130px);
+
+    background-color:  rgb(224, 203, 8);
+    border-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+
+}
+
+
+
+
+#logo {
+
+    transform: translate(10px, -10px);
+}
