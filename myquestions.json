@@ -1,0 +1,35 @@
+
+ {
+    "myQuestions": [
+      {
+        "question": "¿En qué trabaja Sam antes de viajar a Mordor?",
+        "answers":["Camarero", "Desempleado" , "Jardinero", "Paleontólogo"],
+        "correctAnswer": "2"
+      },
+
+      {
+        "question":"¿En qué puerta se puede leer el rótulo: Di amigo y entra?",
+        "answers": ["Bolsón Cerrado" , "Puerta de Bree", "Casa de Elrond", "Puerta de Moria"],
+        "correctAnswer": "3"
+      },
+
+      {
+        "question": "¿A qué tres razas pertenecen los muertos de la Ciénaga de los Muertos?",
+        "answers": ["Hombres, Enanos y Elfos", "Elfos, Hombres y Orcos", "Enanos, Hobbits y Hombres", "Elfos, Orcos y Dragones"],
+        "correctAnswer": "1"
+      },
+
+      {
+        "question":"¿Cuál es la criatura que lleva más tiempo viviendo en la Tierra Media?",
+        "answers":["Gandalf", "El Balrog", "Tom Bombadil", "Ella Laraña"],
+        "correctAnswer": "2"
+      },
+       
+      {
+        "question": "¿Quién es el actual Rey de Gondor?",
+        "answers": ["Frodo", "Boromir", "Aragorn", "Isildur"],
+        "correctAnswer": "2"
+      }
+  ]
+
+}
