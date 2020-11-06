@@ -68,8 +68,17 @@ server.post('/newQuestions', (req, res) => {
   
   res.send()
   
-  database.ref("myQuestions/").push(req.body)
-
+  // database.ref("myQuestions/").push(req.body)
+  let preguntas;
+  database
+  .ref("myQuestions")
+  .once("value", (snapshot) => {
+    preguntas = snapshot.val();
+    database
+        .ref(`myQuestions/${preguntas ? preguntas.length : 0}`)
+        .set(req.body)
+  });
+ 
 });
 
 // 4) START SERVER

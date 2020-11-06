@@ -96,13 +96,10 @@ function createNewQuestion() {
 
       
   
-    //   firebase
-    //     .database()
-    //     .ref(`myQuestions/${preguntas ? preguntas.length : 0}`)
-    //     .set(objetoQuestion)
+      
 
-        enviarFetch(objetoQuestion);
-    // })
+    enviarFetch(objetoQuestion);
+    
  })}
 
   
