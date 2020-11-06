@@ -1,15 +1,22 @@
 // 1) MANDAR POR FETCH AL SERVER LA INFORMACIÓN (METHOD POST)
 
-fetch('http://localhost:8080/newQuestions', { 
+function enviarFetch(e){
+
+  fetch('http://localhost:8080/newQuestions', { 
     method: 'POST',
-    body: JSON.stringify(objetoQuestion),
+    body: JSON.stringify(e),
     headers: {'Content-Type': 'application/json'}
-})
-.then(res => res.text())
-.then(data => console.log(data))
+  })
+  
+  .then(res => res.text())
+  .then(data => myQuestions = data)
+
+}
+
 
 
 // 2) CREAR EL FORM PARA MANDAR LAS NUEVAS PREGUNTAS Y RESPUESTAS
+let preguntas;
 
 function createNewQuestion() {
 
@@ -17,6 +24,7 @@ function createNewQuestion() {
     
     let nuevaPregunta = document.createElement("form");
     nuevaPregunta.id = "nuevaPregunta";
+    console.log(nuevaPregunta)
     
     let inputPreguntas = document.createElement("input");
     inputPreguntas.type = "text";
@@ -85,13 +93,18 @@ function createNewQuestion() {
         answers: answers,
         correctAnswer: correctAnswer
       }
+
+      
   
-      firebase
-        .database()
-        .ref(`myQuestions/${preguntas ? preguntas.length : 0}`)
-        .set(objetoQuestion)
-    })
-  }
+    //   firebase
+    //     .database()
+    //     .ref(`myQuestions/${preguntas ? preguntas.length : 0}`)
+    //     .set(objetoQuestion)
+
+        enviarFetch(objetoQuestion);
+    // })
+ })}
+
   
   
   createNewQuestion()

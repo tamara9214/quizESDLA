@@ -66,9 +66,9 @@ server.get('/public', (req, res) => {
 
 server.post('/newQuestions', (req, res) => {
   
-  res.send( )
-    
-    database.ref("myQuestions/").push(req.body)
+  res.send()
+  
+  database.ref("myQuestions/").push(req.body)
 
 });
 
