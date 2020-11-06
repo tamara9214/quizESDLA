@@ -1,0 +1,26 @@
+{
+  "name": "quizesdla",
+  "version": "1.0.0",
+  "description": "Quiz el señor de los anillos ejercicio The Brigde v3. Crear nuestra propia base de datos. ",
+  "main": "server.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamara9214/quizESDLA.git"
+  },
+  "author": "Tamara Ocaña Montellano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamara9214/quizESDLA/issues"
+  },
+  "homepage": "https://github.com/tamara9214/quizESDLA#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "^8.0.0"
+  }
+}
